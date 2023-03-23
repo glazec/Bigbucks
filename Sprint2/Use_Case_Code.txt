@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+actor Visitor as g
+actor User as u
+actor administrator as a
+Visitor --|> User
+
+package BigBucks {
+  usecase "Register" as UC1
+  usecase "Login" as UC2
+  usecase "Forgot Password" as UC3
+  usecase "Buy and Sell Stocks" as UC4
+  usecase "Track Records and Account Information" as UC5
+  usecase "View Stocks History" as UC6
+  usecase "Analyze the Risk-Return Profile" as UC7
+  usecase "Generate Holding Reports" as UC8
+  usecase "Analytics Charting Features with Customizations" as UC9
+}
+g --> UC1
+u --> UC2
+u --> UC3
+u --> UC4
+u --> UC5
+u --> UC6
+u --> UC7
+u --> UC8
+u --> UC9
+a --> UC3
+a --> UC6
+a --> UC5
+a --> UC9
+@enduml
