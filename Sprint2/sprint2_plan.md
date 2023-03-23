@@ -11,7 +11,7 @@
 |      7      | enable customers to buy/sell stocks and access live stock prices with api | Small  |            3            |       4        |            yiping lu             |
 |      8      |      create database and tables       | Small  |            1            |       4        |            hanyu duan             |
 
-### * Total Estimation : 348 Hours
+### * Total Estimation : 12 Hours
 
 ### * Priority From 1-5  -> Less Important to Most Important
 

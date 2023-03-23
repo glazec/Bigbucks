@@ -1,0 +1,41 @@
+@startuml
+class Customer {
+-firstName
+-lastName
+-accounts
+Customer()
+addAccount()
+}
+
+Customer "1" *-- "many" Account
+
+class Account {
+-assets
+-quantities
+Account()
+buy(symbol, quantity)
+sell(symbol, quantity)
+deposit(amount)
+withdraw(amount)
+}
+
+class Asset{
+-symbol
+-name
+-currentPrice
+-historyPrices
+Asset()
+getCurrentPrice(datetime)
+}
+
+class Transaction{
+-type
+-time
+-asset
+-quantity
+-from
+-to
+-value
+Transaction(type, asset, quantity, from, to)
+}
+@enduml
