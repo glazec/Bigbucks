@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="post">
+        <div class="mb-3">
+        <label for="InputFirstName" class="form-label">First Name</label>
+        <input type="name" class="form-control" id="InputFirstName" name="InputFirstName" required>
+        </div>
+        <div class="mb-3">
+        <label for="InputLastName" class="form-label">Last Name</label>
+        <input type="name" class="form-control" id="InputLastName" name="InputLastName" required>
+        </div>
+        <div class="mb-3">
+        <label for="InputPhoneNumber" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="InputPhoneNumber" name="InputPhoneNumber">
+        </div>
+        <div class="mb-3">
+        <label for="InputEmail" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="InputEmail" name="InputEmail" required>
+        </div>
+        <div class="mb-3">
+        <label for="InputUsertName" class="form-label">User Name</label>
+        <input type="name" class="form-control" id="InputUserName" name="InputUserName" required>
+        </div>
+        <div class="mb-3">
+        <label for="InputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control" id="InputPassword" name="InputPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
